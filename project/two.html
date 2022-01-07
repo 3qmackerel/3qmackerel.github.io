@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <title>實驗結果</title>
+  <style>
+    body {background-color: #FFF8D7; margin:15px 10px;}
+    img {display: block; margin-left: auto; margin-right: auto;}
+    #menu {
+      position: fixed;
+      right: 0;
+      top: 30%;
+    }
+  </style>
 </head>
 <body>
-  <h1 align="center" id="two_4">實驗結果</h1>
+  <h1 align="center" id="two_0"><b>實驗結果</b></h1>
 
-  <table border="0">
-    <tr>
-      <td bgcolor= "#ffffb3" align="center" width="500"> 
-        <a href="#two_1" >前情提要</a>   
-      </td>
-      <td bgcolor= "#b3e7ff" align="center" ="middle" width="500">          
-        <a href="#two_2" >固定長度</a>
-      </td>
-      <td bgcolor= "#ffffb3" align="center" ="middle" width="500">
-        <a href="#two_3" >固定角度</a>
-      </td>
-    </tr>
- </table> 
+  <hr style="height:5px;border-width:0;color:#EA7500;background-color:#EA7500"><br>
 
-  <h2 id="two_1">前情提要</h2>
-  <img src="two_1.png" height="205" width="106">
-  <ul>
-    <li>固定長度(改變角度):大約 24cm ± 1.6cm</li>
-    <li>固定角度(改變長度):大約 42° ± 1.8°</li>
-    <li>比對實驗和用Matlab模擬出來的圖形長寬比，觀察趨勢</li>
-    <li>長寬比數值越大，圖形越扁平</li>
-  </ul>
+  <div align="center" id=menu>
+  <h5 style="color:#d9534f"><b>&darr;選單&darr;</b></h5>
+  <a class="btn btn-outline-success btn-lg" href="#two_0" role="button">前情提要</a><br><br>
+  <a class="btn btn-outline-success btn-lg" href="#two_2" role="button">固定長度</a><br><br>
+  <a class="btn btn-outline-success btn-lg" href="#two_3" role="button">固定角度</a><br><br>
+  <a class="btn btn-outline-danger btn-lg" href="../index.htm" role="button">&ensp;回首頁&ensp;</a><br><br>
+  </div>
+   
 
-  <h2 id="two_2">固定長度(改變角度)</h2>
-  <table border=5 width="1000">
+  <h3 id="two_1">1.前情提要</h3><br>
+  <img src="two_1.png" height="205" width="106"><br>
+  <ul align="center">
+    &#9733; 固定長度(改變角度):大約 24cm ± 1.6cm&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<br>
+    &#9733; 固定角度(改變長度):大約 42° ± 1.8°&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;<br>
+    &#9733; 比對實驗和用Matlab模擬出來的圖形長寬比，觀察趨勢<br>
+    &#9733; 長寬比數值越大，圖形越扁平 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;<br>
+  </ul><br>
+
+  <h3 id="two_2">2.固定長度(改變角度)</h3><br>
+  <table border=5 width="1000" cellpadding="10" align="center">
     <tr align="center">
-      <td>起始角度</td>
-      <td>實驗結果</td>
-      <td>模擬結果</td>
+      <td><b>起始角度</b></td>
+      <td><b>實驗結果</b></td>
+      <td><b>模擬結果</b></td>
     </tr>
     <tr align="center">
       <td>31.97°</td>
@@ -52,19 +59,19 @@
       <td><img src="two_7.png" height="421" width="465"></td>
     </tr>
     <tr align="center">
-      <td>62.51</td>
+      <td>62.51°</td>
       <td><img src="two_8.png" height="314" width="418.5"></td>
       <td><img src="two_9.png" height="421" width="465"></td>
     </tr>
-  </table>
-  <td><img src="two_10.png" height="563" width="995"></td>
+  </table><br>
+  <td><img src="two_10.png" height="563" width="995"></td><br>
 
-  <h2 id="two_3">固定角度(改變長度)</h2>
-  <table border=5 width="1000">
+  <h3 id="two_3">3.固定角度(改變長度)</h3><br>
+  <table border=5 width="1000" cellpadding="10" align="center">
     <tr align="center">
-      <td>起始長度</td>
-      <td>實驗結果</td>
-      <td>模擬結果</td>
+      <td><b>起始長度</b></td>
+      <td><b>實驗結果</b></td>
+      <td><b>模擬結果</b></td>
     </tr>
     <tr align="center">
       <td>12.45cm</td>
@@ -82,20 +89,18 @@
       <td><img src="two_16.png" height="421" width="465"></td>
     </tr>
     <tr align="center">
-      <td>21.21</td>
+      <td>21.21cm</td>
       <td><img src="two_17.png" height="314" width="418.5"></td>
       <td><img src="two_18.png" height="421" width="465"></td>
     </tr>
     <tr align="center">
-      <td>27.01</td>
+      <td>27.01cm</td>
       <td><img src="two_19.png" height="314" width="418.5"></td>
       <td><img src="two_20.png" height="421" width="465"></td>
     </tr>
-  </table>
-  <td><img src="two_21.png" height="563" width="995"></td>
+  </table><br>
+  <td><img src="two_21.png" height="563" width="995"></td><br>
 
-  <h2 align="center"><a href="#two_4" >跳至最上方</a></h2>
-  <h2 align="center"><a href="../index.htm">回首頁</a></h2>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
